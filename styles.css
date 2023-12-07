@@ -1,6 +1,6 @@
 header {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 21;
+    font-size: 21px;
     display: flex;
     flex-direction: row;
 }
@@ -15,4 +15,9 @@ header {
 }
 .divText {
     flex: 2;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    font-size: 21px;
 }
