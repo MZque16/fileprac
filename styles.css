@@ -19,24 +19,29 @@ header {
     flex: 2;
 }
 .main {
+    color: white;
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 .main2 {
+    color: white;
     display: flex;
     flex-direction: column;
     background-color: greenyellow;
 }
 .footer {
+    color: white;
     position: flex;
     margin-top: auto;
     bottom: 0;
     text-align: center;
     padding: 30px;
     background-color: aqua;
-    width: 96%;
+    width: 96%; 
 }  
 .content {
+    color: white;
     display: flex;
     flex-direction: row;
     text-align: center;
