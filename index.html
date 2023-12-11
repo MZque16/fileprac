@@ -6,57 +6,39 @@
   <script src="FileSaver.js-master\FileSaver.js-master\dist\FileSaver.js"></script>
 </head>
 <body>
-  <header>
-    <div class="Divlogo">
-      <img src="wapka_logo.png">
+    <header>
+      <div class="Divlogo">
+        <img src="wapka_logo.png">
+      </div>
+      <div class="divText sidetext">
+        <div>Главная</div>
+        <div>Заказать</div>
+        <div>Наш адрес</div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="main">
+        <h1>Работа с файлами в JavaScript</h1>
+        <input type="file" id="fileInput">
+        <button onclick="readFile()">Прочитать файл</button>
+        <button onclick="writeFile()">Записать файл</button>
+      </div>
+      <div class="main2">
+        <p>Ваша картинка:</p>
+        <img id="imagePreview" height="500" width="600">
+      </div>  
+      <div class="imgblock">
+        <p>Возможные варианты:</p>
+      <a href="#"> <img src="bs1.jpg" height="300px" width="500px"> </a>
+      <a href="#"> <img src="bs2.jpg" height="300px" width="500px"> </a>
+      <a href="#"> <img src="bs3.jpg" height="300px" width="500px"> </a>
+    
+      </div>
     </div>
-    <div class="divText sidetext">
-    <div>Главная</div>
-    <div>Заказать</div>
-    <div>Наш адрес</div>
-  </div>
-  </header>
-  
-  <h1>Работа с файлами в JavaScript</h1>
-  <input type="file" id="fileInput">
-  <button onclick="readFile()">Прочитать файл</button>
-  <button onclick="writeFile()">Записать файл</button>
-  <p>Ваша картинка:</p>
-  <img id="imagePreview" width="800">
+      <div class="footer">
+        Наши контакты: Телефон 88005553535. Никита Евгеньевич
+      </div>
 
-  <script>
-    const fileInput = document.getElementById('fileInput');
-    const imagePreview = document.getElementById('imagePreview');
-
-    fileInput.addEventListener('change', function() {
-      const file = fileInput.files[0];
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        imagePreview.src = e.target.result;
-      };
-      reader.readAsDataURL(file);
-    });
-
-    function readFile() {
-      const fileInput = document.getElementById('fileInput');
-      const file = fileInput.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-          // Обработка содержимого файла
-          console.log(e.target.result);
-        };
-        reader.readAsText(file);
-      }
-    }
-
-    function writeFile() {
-      const fileData = 'Приветвцуацуаацауц';
-      const blob = new Blob([fileData], { type: 'text/plain;charset=utf-8' });
-      const fileName = 'example.txt';
-      saveAs(blob, fileName);
-    }
-
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
