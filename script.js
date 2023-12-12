@@ -16,7 +16,6 @@ const fileInput = document.getElementById('fileInput');
       if (file) {
         const reader = new FileReader();
         reader.onload = function(e) {
-          // Обработка содержимого файла
           console.log(e.target.result);
         };
         reader.readAsText(file);
