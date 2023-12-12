@@ -1,10 +1,10 @@
 header {
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
     font-size: 21px;
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-color: rgb(148, 64, 5);
 }
 .sidetext {
     text-align: right;
@@ -19,40 +19,44 @@ header {
     flex: 2;
 }
 .main {
-    color: white;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+    flex: 1;
 }
 .main2 {
-    color: white;
     display: flex;
     flex-direction: column;
-    background-color: greenyellow;
+    background-color: white;
+    flex: 1;
+    align-items: center;
 }
 .footer {
-    color: white;
+    color: black;
     position: flex;
     margin-top: auto;
     bottom: 0;
     text-align: center;
     padding: 30px;
-    background-color: aqua;
+    background-color: rgb(148, 64, 5);
     width: 96%; 
 }  
 .content {
-    color: white;
+    text-shadow: 1px 1px 2px rgb(228, 215, 215);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
     display: flex;
     flex-direction: row;
     text-align: center;
-    background-color: blueviolet;
+    background-color: rgb(226, 226, 226);
 }
 .imgblock {
     display: flex;
     flex-direction: column;
-    background-color: orange;
-    text-align: center; 
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+    flex: 1; 
 }
-img {
+.img {
     border: solid black 1px;
 }
