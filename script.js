@@ -23,7 +23,7 @@ const fileInput = document.getElementById('fileInput');
     }
 
     function writeFile() {
-      const fileData = 'Приветвцуацуаацауц';
+      const fileData = 'Привет';
       const blob = new Blob([fileData], { type: 'text/plain;charset=utf-8' });
       const fileName = 'example.txt';
       saveAs(blob, fileName);
